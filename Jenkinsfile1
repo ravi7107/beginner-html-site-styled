@@ -11,12 +11,6 @@ pipeline {
 
   stages {
 
-    stage('Checkout') {
-      steps {
-        git 'https://github.com/ravi7107/beginner-html-site-styled.git'
-      }
-    }
-
     stage('Build Image') {
       steps {
         sh '''
